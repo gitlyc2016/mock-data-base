@@ -1,37 +1,103 @@
 {
-  "events": [
-    {
-      "id": 5928101,
-      "category": "animal welfare",
-      "title": "Cat Adoption Day",
-      "description": "Find your new feline friend at this event.",
-      "location": "Meow Town",
-      "date": "January 28, 2022",
-      "time": "12:00",
-      "petsAllowed": true,
-      "organizer": "Kat Laydee"
-    },
-    {
-      "id": 4582797,
-      "category": "food",
-      "title": "Community Gardening",
-      "description": "Join us as we tend to the community edible plants.",
-      "location": "Flora City",
-      "date": "March 14, 2022",
-      "time": "10:00",
-      "petsAllowed": true,
-      "organizer": "Fern Pollin"
-    },
-    {
-      "id": 8419988,
-      "category": "sustainability",
-      "title": "Beach Cleanup",
-      "description": "Help pick up trash along the shore.",
-      "location": "Playa Del Carmen",
-      "date": "July 22, 2022",
-      "time": "11:00",
-      "petsAllowed": false,
-      "organizer": "Carey Wales"
-    }
-  ]
+  "code": 0,
+  "msg": "success",
+  "data": [{
+    "id": 1000,
+    "parentId": -1,
+    "name": "首页",
+    "path": "/",
+    "component": "Home",
+    "children": []
+  }, {
+    "id": 2000,
+    "parentId": -1,
+    "name": "山地车",
+    "path": "/car",
+    "component": "Car",
+    "children": [{
+      "id": 2100,
+      "parentId": 2000,
+      "name": "运动山地车",
+      "path": "/car/:id",
+      "component": "Car",
+      "children": []
+    }, {
+      "id": 2200,
+      "parentId": 2000,
+      "name": "越野山地车",
+      "path": "/car/:id",
+      "component": "Car",
+      "children": []
+    }, {
+      "id": 2300,
+      "parentId": 2000,
+      "name": "双人竞速山地车",
+      "path": "/car/:id",
+      "component": "Car",
+      "children": []
+    }, {
+      "id": 2400,
+      "parentId": 2000,
+      "name": "自由骑",
+      "path": "/car/:id",
+      "component": "Car",
+      "children": []
+    }, {
+      "id": 2500,
+      "parentId": 2000,
+      "name": "降速车",
+      "path": "/car/:id",
+      "component": "Car",
+      "children": []
+    }]
+  }, {
+    "id": 3000,
+    "parentId": -1,
+    "name": "骑行路线",
+    "path": "/road",
+    "component": "Road",
+    "children": []
+  }, {
+    "id": 4000,
+    "parentId": -1,
+    "name": "新闻中心",
+    "path": "/news",
+    "component": "News",
+    "children": []
+  }, {
+    "id": 5000,
+    "parentId": -1,
+    "name": "关于我们",
+    "path": "/about",
+    "component": "About",
+    "children": [{
+      "id": 5100,
+      "parentId": 5000,
+      "name": "公司概况",
+      "path": "/about",
+      "component": "About",
+      "children": []
+    }, {
+      "id": 5200,
+      "parentId": 5000,
+      "name": "我们的优势",
+      "path": "/advance",
+      "component": "Advance",
+      "children": []
+    }, {
+      "id": 5300,
+      "parentId": 5000,
+      "name": "服务体系",
+      "path": "/service",
+      "component": "Service",
+      "children": []
+    }, {
+      "id": 5400,
+      "parentId": 5000,
+      "name": "发展历程",
+      "path": "/history",
+      "component": "History",
+      "children": []
+    }]
+  }]
 }
